@@ -6,7 +6,7 @@ public class PlayerScript : MonoBehaviour {
     Vector2 playerPos;
 
     //Player's attributes
-    public int damage; //How much damage the player deals
+    //public int damage; //How much damage the player deals
     public float speed; //How fast the player moves
     public float aspd; //How fast the player attacks
 
@@ -30,6 +30,7 @@ public class PlayerScript : MonoBehaviour {
         animator = GetComponent<Animator>();
     }
 
+   
     void Update() {
         //Casting rays and creating dynamic shadows
         Vector2 mousePos = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y); //Shortening mouse position and changing it into a vector2 instead of a v3
@@ -110,7 +111,7 @@ public class PlayerScript : MonoBehaviour {
     }
 	
 
-
+    ///////////////////////////////////////
 
 	// Update is called once every 0.2 seconds (not every frame)
 	void FixedUpdate () {
