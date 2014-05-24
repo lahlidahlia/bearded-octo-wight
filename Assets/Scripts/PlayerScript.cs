@@ -4,6 +4,9 @@ using System.Collections;
 public class PlayerScript : MonoBehaviour {
     public LayerMask lightLayerMask;
     Vector2 playerPos;
+
+    //Player's attributes
+    public int damage; //How much damage the player deals
     public float speed; //How fast the player moves
     public float aspd; //How fast the player attacks
 
